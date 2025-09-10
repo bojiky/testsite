@@ -1,0 +1,112 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	color: #fff;
+	transition: background 0.5s ease;
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	padding: 40px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	text-align: center;
+	max-width: 800px;
+	width: 100%;
+	position: relative;
+}
+
+h1 {
+	color: #0098ff;
+	font-size: 3.0rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+	color: #35adff;
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+	color: #56bbff;
+	font-size: 2rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+	color: #76c8ff;
+	font-size: 1.7rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+	color: #8bd0ff;
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h6 {
+	color: #addeff;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 15px 0;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 30px;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:hover {
+	background: rgba(255, 255, 255, 0.25);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme {
+	background: linear-gradient(135deg, #0a122a, #1e1a40, #2d1b69);
+}
+
+body.dark-theme .container {
+	background: rgba(0, 0, 0, 0.2);
+	border-color: rgba(255, 255, 255, 0.1);
+}
